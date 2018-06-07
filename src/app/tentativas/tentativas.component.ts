@@ -30,8 +30,7 @@ export class TentativasComponent implements OnInit {
       let indice = this.coracoes.length - this.tentativas
       let cocaraoleng = this.coracoes.length
       this.coracoes[indice -1].cheio = false
-      console.log("cocacao" ,cocaraoleng)
-      console.log("indice" ,indice)
+   
     } 
   }
 

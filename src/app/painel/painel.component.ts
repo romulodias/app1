@@ -4,6 +4,7 @@ import { Frase } from '../shared/frase.model'
 
 import { FRASES } from './frases-mock'
 import { Alert } from 'selenium-webdriver';
+import * as jsPDF from 'jspdf'
 
 @Component({
   selector: 'app-painel',
@@ -33,7 +34,7 @@ export class PainelComponent implements OnInit , OnDestroy {
   }
 
   ngOnDestroy(){
-    console.log("painel foi destruido")
+   
   }
 
   atualizaResposta(resposta: Event): void {
@@ -41,7 +42,7 @@ export class PainelComponent implements OnInit , OnDestroy {
   }
 
   verificarResposta(): void {
-    console.log("rodadda" , this.rodada)
+    
 
     if (this.rodadaFrase.frasePtbr == this.resposta) {
 
